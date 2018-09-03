@@ -10,6 +10,7 @@ import vineet from "../assets/images/vineet.jpg";
 import aniket from "../assets/images/aniket.jpg";
 import irfan from "../assets/images/irfan-mohd.jpg";
 import soum from "../assets/images/soum.jpg";
+import abhijeet from "../assets/images/abhijeet.png";
 //import * as x from "../assets/images/employee/";
 
 export default class Whoweare extends Component {
