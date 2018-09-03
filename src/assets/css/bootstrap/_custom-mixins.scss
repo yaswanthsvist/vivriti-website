@@ -1,0 +1,28 @@
+/* Mixins */
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    border-radius: $radius;
+}
+
+@mixin position($position, $top, $right, $bottom, $left) {
+    position: $position;
+    top:$top;
+    right:$right;
+    bottom:$bottom;
+    left:$left;
+}
+@mixin vertical-center($display, $align-items, $justify-content, $flex-direction) {
+    display:$display;
+    align-items:$align-items;
+    justify-content:$justify-content;
+    flex-direction:$flex-direction;
+}
+@mixin flexbox() {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}

@@ -1,16 +1,25 @@
 import React, { Component } from "react";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import Home from "./components/Home";
+import Whoweare from "./components/Whoweare";
+
+// import route Components here
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
+      <Router>
+        <div className="App">
+          <Header />
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route path="/who-we-are" component={Whoweare} />
+          </Switch>
+          <Footer />
+        </div>
+      </Router>
     );
   }
 }
